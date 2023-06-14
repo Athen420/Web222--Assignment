@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="AllanJohn">
+    <meta name="description" content="main">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Contact Me</title>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html" class="logo">ALLAN JOHN</a>
+        <div class="header-right">
+          <a href="index.html">Home</a>
+          <a href="resume.html">Resume</a>
+        </div>
+    </div>
+    <div class="mainbody">
+        <div class="container">
+            <img src="Kuvshinov Ilya.jpeg" class = "logo1" width="150" alt=" https://www.patreon.com/posts/7848126">
+            <h3 style="color:black; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Contact Form</h3>
+            <form action="https://formspree.io/f/xgeqebzy" method="POST">
+                <label for="fname" style="color: black;">Name</label>
+                <input type="text" id="fname" name="name" placeholder="Your name..">
+            
+                <label for="lemail" style="color: black;">Email</label>
+                <input type="email" id="lemail" name="email" placeholder="Your email...">
+
+                <label for="laddress" style="color: black;"><span class="text-danger">*</span>Address</label>
+                <input required type="text" id="address" name="address" placeholder="Your address...">
+
+                <label for="lcity" style="color: black;"><span class="text-danger">*</span>City</label>
+                <input required type="text" id="city" name="city" placeholder="Your city...">
+            
+                <label for="country" style="color: black;">Country</label>
+                <select id="country" name="country">
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                  <option value="usa">India</option>
+                </select>
+
+                <label for="lpostal" style="color: black;">Postal Code</label>
+                <input id="postal-code" class="form-control" name="post-code" autocomplete="postal-code" type="text" tabindex="9" placeholder="M5W 1E6" pattern="^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$" required>
+                <div class="row">
+                    <div class="form-group col">
+                      <label class="mr-3"><span class="text-danger">*</span> Contact Reason:</label>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="contact-reason" id="prefer-hiring" value="hiring" checked tabindex="11">
+                        <label class="form-check-label" for="prefer-hiring">Hiring</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="contact-reason" id="prefer-question" value="question" tabindex="12">
+                        <label class="form-check-label" for="prefer-question">Question</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="contact-reason" id="prefer-comment" value="comment" tabindex="13">
+                        <label class="form-check-label" for="prefer-comment">Comment</label>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            
+                <input type="submit" value="Submit">
+              </form>
+        </div>
+    </div>
+    <script src="contact.js"></script>   
+</body>
+</html>    
